@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("./images/background.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color:white
+}
+.title{
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+}
+.title:hover{
+    cursor: pointer;
+    color: #a0ecff;
+    /*#61dbfb*/
+}
+.projects, .skills, .socials{
+
+    background-color: black;
+    padding: 250px;
+    padding-top:35px ;
+    display: flex;
+    justify-content: space-around;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+.projectCard{
+    height: 225px;
+    width: 400px;
+    border: 2px solid rgb(137, 137, 137);
+    background-color:rgb(24, 26, 27);
+    /*background-color: rgb(27, 27, 27);*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgb(213, 213, 213);
+    transition: 200ms ease-in-out;
+}
+.projectCard:hover{
+    box-shadow: 0px 0px 15px 1px #61dbfb;
+    border: none;
+    cursor: pointer;
+}
+#projects{
+    margin-top: 900px;
+}
+.sectionTitle{
+    box-shadow: 0px 0px 30px 20px black;
+    text-align: center;
+    background-color: black;
+    padding: 100px;
+    font-size: 40px;
+}
+.richText{
+    color: grey;
+    background-color: #050505;
+    padding: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 200;
+    background-blend-mode: darken;
+}
+.skillCard{
+    border-radius: 20px;
+    height: 450px;
+    width: 275px;
+    background-color: rgb(24, 26, 27);;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.skillCard > img{
+    margin: 35px;
+    width: 75px;
+}
+.skillCard > h5{
+    margin-bottom: 50px;
+    color: #61dbfb;
+    font-size: 22px;
+}
+.skillCard > ul {
+    text-align: center;
+  
+    list-style: none;
+}
+.skillCard > ul > li{
+    color: rgb(181, 181, 181);
+    font-size: 17px;
+    margin: 10px;
+}
+.bannerTitle{
+    padding-bottom: 450px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 54px;
+}
+h5 > span{
+    font-style: normal;
+}
+
+#scrollDown{
+    display: block;
+    margin: 30px auto;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    transition: 300ms ease-in-out;
+}
+#scrollDown:hover{
+    background-color: #61dbfb;
+    color: black;
+}
+footer{
+    background-color: #050505;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.socials > img{
+    width: 50px;
+    margin: 30px;
+    cursor: pointer;
+}
+.socials{
+    justify-content: center;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.email > img{
+    height: 75px;
+    border: 2px inset #7c7c7c;
+    border-left:none ;
+    cursor: pointer;
+}
+.email > input{
+    background-color: black;
+    outline: none;
+    cursor: not-allowed;
+    width: 525px;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    height: 75px;
+}
